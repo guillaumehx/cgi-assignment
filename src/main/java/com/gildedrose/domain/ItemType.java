@@ -1,6 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.domain;
 
-public enum ItemTypeEnum {
+public enum ItemType {
 
     NORMAL,
     AGED_BRIE,
@@ -8,7 +8,7 @@ public enum ItemTypeEnum {
     BACKSTAGE_PASS,
     CONJURED;
 
-    public static ItemTypeEnum fromName(String name) {
+    public static ItemType fromName(String name) {
         if (name.contains("Aged Brie")) {
             return AGED_BRIE;
         }
